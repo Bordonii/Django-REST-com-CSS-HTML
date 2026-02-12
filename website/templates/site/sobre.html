@@ -1,0 +1,80 @@
+{% extends 'site/base.html' %}
+
+{% block title %}Sobre o Projeto{% endblock %}
+
+{% block content %}
+
+
+
+<section class="hero-section" style="min-height: 70vh;">
+    <div class="container">
+        <div class="hero-content">
+            <span class="hero-tag">
+                <i class="fas fa-info-circle"></i> Sobre
+            </span>
+            
+            <h1 class="hero-title">
+                Sobre o <span class="gradient-word">Projeto</span>
+            </h1>
+            
+            <p class="hero-subtitle">
+                O Projeto Busca incentivar a leitura,Apresentando varios tipos de Livros.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+
+<section style="padding: 5rem 0; background: var(--dark-gray);">
+    <div class="container">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <h2 style="font-size: 2.5rem; margin-bottom: 2rem; color: var(--purple-light);">
+                Por que criou esse site em específico?
+            </h2>
+            
+            <div style="display: grid; gap: 2rem;">
+                <div class="card" style="background: var(--gray); border: 1px solid var(--light-gray);">
+                    <div class="card-content">
+                        <h3 class="card-title" style="color: var(--purple-light);">
+                            <i class="fas fa-lightbulb"></i> A Educação deve ser para todos.
+                        </h3>
+                        <p class="card-description">
+                            Eu, por muito tempo, não tive o costume de ler livros, mas tudo mudou quando encontrei um livro de que gostei. É por isso que concordo com a frase: “quem não gosta de ler é porque ainda não encontrou o livro certo”. Em média, um brasileiro lê poucos livros por ano, e é triste ver isso, já que os livros ajudam muito,conhecimento nunca é demais. E, como eu queria criar um projeto em Django, acabei unindo essa ideia aos livros, então criei este site.
+                        </p>
+                    </div>
+                </div>
+                
+                
+                </div>
+            </div>
+        </div>
+    </div>
+  
+
+
+</section>
+<div style="margin-top: 2rem; padding: 1.5rem; background: #0a0a0f; border-radius: 5px;">
+            <h4 style="color: #b6becf; margin-bottom: 0.5rem;">
+                <i class="fas fa-terminal"></i> Linguagens Usadas:
+            </h4>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem;">
+                <span style="background: #2563eb; color: white; padding: 0.25rem 0.75rem; border-radius: 20px;">
+                    Django
+                </span>
+                <span style="background: #7c3aed; color: rgb(255, 255, 255); padding: 0.25rem 0.75rem; border-radius: 20px;">
+                    Python
+                </span>
+                <span style="background: #10b981; color: white; padding: 0.25rem 0.75rem; border-radius: 20px;">
+                    HTML5
+                </span>
+                <span style="background: #f59e0b; color: white; padding: 0.25rem 0.75rem; border-radius: 20px;">
+                    CSS3
+                </span>
+            </div>
+        </div>
+    </div>
+
+    
+
+{% endblock %}

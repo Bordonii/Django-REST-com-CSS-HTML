@@ -1,0 +1,75 @@
+{% extends 'site/base.html' %}
+
+{% block title %}Projeto - Livro{% endblock %}
+
+{% block content %}
+<h1 style="color:red;">TESTE DE TEMPLATE</h1>
+
+
+<section class="hero-section">
+    <div class="container">
+        <div class="hero-content">
+            <span class="hero-tag">
+                <i class="fas fa-bolt"></i> Coleção
+            </span>
+            
+            <h1 class="hero-title">
+                 <span class="gradient-word">Livros</span>
+            </h1>
+            
+            
+            
+        </div>
+    </div>
+</section>
+
+
+<section class="cards-section">
+    <div class="container">
+        <h2 class="section-title">No momento tem {{ itens|length }} Livros</h2>
+        {% if not itens %}
+    <p style="color:white;">Nenhum livro cadastrado ainda.</p>
+{% endif %}
+        
+            <div class="cards-grid">
+    {% for item in itens %}
+    <div class="card">
+
+        <div class="card-image">
+            {% if item.imagem %}
+                <img src="{{ item.imagem.url }}" alt="{{ item.name }}">
+            {% endif %}
+        </div>
+        
+        
+        <div class="card-content">
+            <h3 class="card-title">{{ item.name }}</h3>
+            <p class="card-description">{{ item.synopsis }}</p>
+
+            <div class="card-tags">
+                <span class="tag tag-autor">{{ item.autor }}</span>
+                <span class="tag">{{ item.genre }}</span>
+            </div>
+
+            <a href="#" class="card-btn">
+                Ver <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+
+    </div>
+    {% endfor %}
+</div>
+
+    </div>
+</section>
+
+</div>
+
+            
+ 
+
+    
+</section>
+
+
+{% endblock %}
